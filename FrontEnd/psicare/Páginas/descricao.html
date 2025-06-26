@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Descrição - PsiCare</title>
+  <link rel="website icon" href="./Imagens/Logo-PsiCare.png">
+  <link rel="stylesheet" href="../style1.css">
+</head>
+<body>
+  <div class="container">
+      <a href="../index.html">
+        <img src="/FrontEnd/psicare/Imagens/Logo-PsiCare.png" alt="Logo-PsiCare" class="Logo-PsiCare">
+      </a>
+    <div class="header">
+      <h1>PsiCare</h1>
+      <div class="data"><span id="data-hoje"></span></div>
+    </div>
+
+    <div class="humor-section">
+      <h4>Como está seu humor hoje?</h4>
+      <span class="humor-option">😢</span>
+      <span class="humor-option">😟</span>
+      <span class="humor-option">😐</span>
+      <span class="humor-option">🙂</span>
+      <span class="humor-option">😁</span>
+    </div>
+
+    <textarea id="descricao" placeholder="Descreva aqui como você se sente hoje..."></textarea>
+
+    <div class="buttons">
+      <button class="limpar" onclick="limpar()">Limpar</button>
+      <button class="salvar" onclick="salvar()">Salvar</button>
+    </div>
+
+    <div class="footer">
+      <div class="historico">
+        <button>
+          <a href="/FrontEnd/psicare/Páginas/historico.html">Histórico</a>
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="/FrontEnd/psicare/Scripts/descricao.js"></script>
+</body>
+</html>
