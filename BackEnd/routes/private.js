@@ -33,16 +33,7 @@ router.post('/emocao', async (req, res) => {
 
 // Listar emoçoes
 router.get('/emocoes', async (req, res) => {
-    // try {
-    //     const lista = await prisma.emotion.findMany({
-    //         where: { userId: req.user.id },
-    //         orderBy: { date: 'desc' }
-    //     })
-    //     res.json(lista)
-    // } catch (err) {
-    //     res.status(500).json({ message: 'Erro ao listar emoçoes'})
-    // }
-    
+       
     const { mood, start, end} = req.query;
 
     const filtros = { userId: req.user.id};
